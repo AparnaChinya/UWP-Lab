@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+
+    <Title>
+      HOL Classic Binding
+    </Title>
+    <Description>
+     HOL Classic Binding
+    </Description>
+
+    <Shortcut>
+      ClassicBinding
+    </Shortcut>
+
+    <Author>AparnaChinya</Author>
+    <HelpUrl>
+    </HelpUrl>
+  </Header>
+  <Snippet>
+    <Code Language="XAML">
+      <![CDATA[
+
+         <ListView Header="Classic" ItemsSource="{Binding Items}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+            
+        </ListView>
+            ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

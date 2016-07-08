@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+
+    <Title>
+      HOL Buttons - DeferLoad
+    </Title>
+    <Description>
+      HOL Buttons - DeferLoad
+    </Description>
+
+    <Shortcut>
+      DeferLoad
+    </Shortcut>
+
+    <Author>AparnaChinya</Author>
+    <HelpUrl>
+    </HelpUrl>
+  </Header>
+  <Snippet>
+    <Code Language="XAML">
+      <![CDATA[
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"></RowDefinition>
+            <RowDefinition Height="300"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+        
+        <Rectangle x:Name="Red" Fill="Red" Grid.Column="0" Grid.Row="0"/>
+        <Rectangle x:Name="Green" Fill="Green" Grid.Column="1" Grid.Row="0" />
+        <Rectangle x:Name="Blue" Fill="Blue" Grid.Column="0" Grid.Row="1" />
+        <Rectangle x:Name="Yellow" Fill="Yellow" Grid.Column="1" Grid.Row="1" />
+        
+        <Button Content="Load" Style="{StaticResource TextBlockButtonStyle}" Grid.Row="2"/>
+            ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

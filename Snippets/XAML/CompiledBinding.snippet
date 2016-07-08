@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+
+    <Title>
+      HOL Compiled Binding
+    </Title>
+    <Description>
+     HOL Compiled Binding
+    </Description>
+
+    <Shortcut>
+      CompiledBinding
+    </Shortcut>
+
+    <Author>AparnaChinya</Author>
+    <HelpUrl>
+    </HelpUrl>
+  </Header>
+  <Snippet>
+    <Code Language="XAML">
+      <![CDATA[
+
+           <ListView Header="Compiled binding" ItemsSource="{x:Bind viewModels.Items }" Grid.Column="1"
+                  xmlns:m="using:XamlBindingApp.Models">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="m:ToDoList">
+                    <TextBlock Text="{x:Bind Title}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>     
+            
+        </ListView>
+            ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
